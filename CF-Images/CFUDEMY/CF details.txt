@@ -1,0 +1,23 @@
+CF
+creating s3 =>
+It's free
+S3 is for storing static files in a replicated and globally available way
+3) It powers many website ,single page apps ,hosts all the netflix video content
+
+we will use cf to provision a s3 bucket 
+
+
+* we can't delete  a non-empty bucket
+* delete bucket objects firts 
+
+TEmplate options parameters
+# Tags
+# Permissions
+# Notifictaion Option
+# Timeout
+#Rollback on failure 
+#Rollback Configuration (Monitoring time & CloudWatch Alarm)
+# Stack Policy
+#Termination Protection
+#Quick-start Link
+

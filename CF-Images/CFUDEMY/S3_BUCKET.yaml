@@ -1,0 +1,20 @@
+Resources:
+  MyS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties: {}
+# WITHOUT INTERPRTION CHANGE IN BUCKET
+#ADDING ACCESS CONTROL
+Resources:
+  MyS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: PublicRead
+
+# CHANGE NAME OF BUCKET 
+# INTERAPTION OLD BUCKET IS DELETED     
+Resources:
+  MyS3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: PublicRead
+      BucketName: "new-23-random-string-intereption-12345233"      

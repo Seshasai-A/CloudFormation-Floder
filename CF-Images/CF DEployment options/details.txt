@@ -1,0 +1,9 @@
+You want to update a CloudFormation but you want to preview changes that will happen to your resources before applying them. What will you use?
+=> ans :- Changeset
+
+How do you roll back a CloudFormation stack creation when a CloudWatch Alarm triggered? => Rollback Trigger
+
+You want to prevent developers from another department from updating or deleting certain stack resources (e.g., RDS Instance) when they update the CloudFormation stack. What will you use to achieve this? => Stack Policy
+
+
+A CloudFormation feature that allows you to create CloudFormation stacks quickly from AWS Console without pass through the wizard pages? => quick create link for stack

@@ -1,0 +1,14 @@
+
+nested stack
+Closing Comments on Nested Stacks
+Great nested stacks example at https://github.com/aws-samples/ecs-refarch-cloudformation/blob/master/master.yaml
+
+Exported Stack Output Values vs. Using Nested Stacks:
+
+If you have a central resource that is shared between many different other stacks, use Exported Stack Output Values
+
+If you need other stacks to be updated right away if a central resource is updated, use Exported Stack Output Values
+
+If the resources can be dedicated to one stack only and must be re-usable pieces of code, use Nested Stacks
+
+Note that you will need to update each Root stack manually in case of Nested stack updated

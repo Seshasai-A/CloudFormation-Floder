@@ -1,0 +1,59 @@
+no free tier
+$1 may cost for create and delete
+
+Now, the second step we have to do
+
+is to create the execution role.
+
+So this CloudFormation templates must be applied
+
+in all the target accounts that you want to use
+
+the StackSet feature in.
+
+Now we are in a single account type of setting,
+
+so we have to deploy this template as well
+
+in the same account.
+
+But imagine that if you had different target accounts
+
+in AWS, then you would deploy these template
+
+in all the target accounts.
+
+This is an initial setup that you cannot avoid
+
+unless you are using AWS organizations.
+
+So, this template has a parameter,
+
+which is the administrator account ID
+
+that we'll have to specify.
+
+This is necessary to allow this role
+
+to be trusting in assuming the parent role, admin role.
+
+So this is going to create an IAM role,
+
+and this is going to have the right name, and the idea's
+
+that we're going to have an assume role policy document
+
+to say who can assume this role,
+
+and we'll have a reference to the administrator account ID,
+
+so fairly easy.
+
+
+
+
+
+
+
+How do you create, update, and delete CloudFormation stacks in different accounts and regions with a single operation?
+STACKSET

@@ -1,0 +1,87 @@
+CF
+creating s3 =>
+It's free
+S3 is for storing static files in a replicated and globally available way
+3) It powers many website ,single page apps ,hosts all the netflix video content
+
+we will use cf to provision a s3 bucket 
+
+
+* we can't delete  a non-empty bucket
+* delete bucket objects firts 
+
+TEmplate options parameters
+# Tags
+# Permissions
+# Notifictaion Option
+# Timeout
+#Rollback on failure 
+#Rollback Configuration (Monitoring time & CloudWatch Alarm)
+# Stack Policy
+#Termination Protection
+#Quick-start Link
+
+
+
+Parameters Settings:
+Fn::Ref Function can be levearaged to refenence
+
+Parameters can be used anywhere in a template
+
+.AWSTemplateFormateVersion
+.Description
+.Transform
+. Mapping
+
+Shorthand for yaml is !Ref
+
+Resources
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html
+ec2 refrence
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html
+
+
+MAPPING
+https://docs.amazonaws.cn/en_us/AWSCloudFormation/latest/UserGuide/mappings-section-structure.html#mappings-section-structure-examples
+
+
+OUTPUTS FOR SECURITY GROUPS 
+AWS::EC2::SecurityGroup => CHECK DOC AWS
+
+RULES => MUST CHECK
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/rules-section-structure.html
+
+
+
+command=> cat /var/log/cloud-init-output.log
+cat /var/log/cfn-init.log for init logs
+to check  what user data has done internally
+
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-init.html
+!sub = substitute
+
+CF DRIFT
+https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/resource-import-supported-resources.html
+
+
+
+nested stack
+Closing Comments on Nested Stacks
+Great nested stacks example at https://github.com/aws-samples/ecs-refarch-cloudformation/blob/master/master.yaml
+
+Exported Stack Output Values vs. Using Nested Stacks:
+
+If you have a central resource that is shared between many different other stacks, use Exported Stack Output Values
+
+If you need other stacks to be updated right away if a central resource is updated, use Exported Stack Output Values
+
+If the resources can be dedicated to one stack only and must be re-usable pieces of code, use Nested Stacks
+
+Note that you will need to update each Root stack manually in case of Nested stack updated
+
+
+
+UDEMY WORDPRESS
+
+ Discourage search engines from indexing this site
+ 
